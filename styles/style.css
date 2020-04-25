@@ -3,18 +3,110 @@ body {
     background-size: 100vw;
 }
 
+
+header {
+    padding: 3em;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(115,115,115,0.19), 0 6px 6px rgba(115,115,115,0.23);
+    width: 80%;
+}
+
 h1 {
     text-align: center;
+    font-family: 'Major Mono Display', monospace;
 }
+
 #description {
     text-align: center;
+    margin-top: 1em;
+    font-family: 'Baloo Paaji 2', cursive;
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 1.5em;
+    box-shadow: 0 10px 20px rgba(115,115,115,0.19), 0 6px 6px rgba(115,115,115,0.23);
     position: relative;
     padding: 3em;
     border-radius: 15px;
-    width: 80%;
+    width: 70%;
+    margin: auto;
+    font-family: 'Baloo Paaji 2', cursive;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgb(190,190,190))
+}
+
+
+
+#name, #number, #email {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 20em;
+}
+
+#email-label, #name-label, #number-label, #dropdown-label {
+    text-align: center;
+    display: block;
     margin: auto;
 }
+
+#email {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    height: 2.5em;
+}
+
+#dropdown {
+    margin: auto;
+    display: block;
+    height: 3em;
+    width: 20em;
+}
+
+#dropdown:hover {
+    background-color: grey;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 2em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#textarea-label {
+    display: block;
+    margin: auto;
+    text-align: justify;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    padding: 0.8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    border-radius: 10px;
+    margin-top: 1.5em;
+}
+
+#submit:hover {
+    background-color: grey;
+}
+
+textarea {
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    width: 70%;
+    font-size: 0.8em;
+}
+
