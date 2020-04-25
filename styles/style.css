@@ -6,7 +6,15 @@ body {
 h1 {
     text-align: center;
 }
+#description {
+    text-align: center;
+}
 
 form {
     background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    padding: 3em;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
 }

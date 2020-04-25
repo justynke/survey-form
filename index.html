@@ -3,16 +3,22 @@
     <head>
         <link href="styles/style.css" rel="stylesheet" type="text/css">
     </head>
+
+
     <body>
         <header>
             <h1 id="title">Welcome to language learning survey form!</h1>
             <p id="description">In this form you can describe your language learning experience.</p>
         </header>
+
+
+
         <main>
             <form id="survey-form">
-                <label for = "name" id="name-label">Enter your name: </label><input type = "text" placeholder = "Your name" id="name"><br>
-                <label for ="email" id="email-label">Enter your e-mail: </label><input type = "email" placeholder = "example@example.com" id = "email"><br>
+                <label for = "name" id="name-label">Enter your name: </label><input type = "text" placeholder = "Your name" id="name" required><br>
+                <label for ="email" id="email-label">Enter your e-mail: </label><input type = "email" placeholder = "example@example.com" id = "email" required><br>
                 <label for = "number" id="number-label">Your age: </label><input type = "number" placeholder = "99" id="number" min="1" max="99"><br>
+
                 <label for="dropdown">Choose your best foreign language:</label>
                 <select id="dropdown">
                     <option value="german">German</option>
@@ -21,6 +27,52 @@
                     <option value="spanish">Spanish</option>
                     <option value="russian">Russian</option>
                 </select>
+                <br>
+
+                <fieldset>
+                    <legend>Did you consider learning a new foreign language this year?</legend>
+                    <label for = "yes">
+                        <input type = "radio" id ="yes" name="newlang" value="yes">Yes
+                    </label>
+                    <label for = "no">
+                        <input type = "radio" id ="no" name="newlang" value="no">No
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Do you enjoy learning foreign languages?</legend>
+                    <label for = "yes">
+                        <input type = "radio" id ="yes" name="enjoying" value="yes">Yes
+                    </label>
+                    <label for = "no">
+                        <input type = "radio" id ="no" name="enjoying" value="no">No
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which of the following languages would you/have you considered to learn?</legend>
+                    <label for = "german">
+                        <input type = "checkbox" id ="german" name="enjoying" value="german">German
+                    </label>
+                    <label for = "russian">
+                        <input type = "checkbox" id ="russian" name="enjoying" value="russian">Russian
+                    </label>
+                    <label for = "spanish">
+                        <input type = "checkbox" id ="spanish" name="enjoying" value="spanish">Spanish
+                    </label>
+                    <label for = "italian">
+                        <input type = "checkbox" id ="italian" name="enjoying" value="italian">Italian
+                    </label>
+                    <label for = "polish">
+                        <input type = "checkbox" id ="polish" name="enjoying" value="polish">Polish
+                    </label>
+                </fieldset>
+
+                <label for="comments">This survey form is all about your personal experience. Please let us know, what was the hardest thing for you about learning your best foreign langueage. The most interesting answers will be published in the next week on our blog!</label><br>
+                <textarea rows="10" cols="50" id="comments"></textarea>
+
+
+
 
                 <button type = "submit" id="submit">Submit</button>
             </form>
